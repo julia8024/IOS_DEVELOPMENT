@@ -1,0 +1,163 @@
+/* 로고 폰트 */
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 기본 폰트 */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/* font-family: 'NanumSquare'; */
+
+/* 미디어쿼리 */
+@import url(cssscreen.css) screen;
+
+/* max-width: 980px; */
+
+* {
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* input 스타일 */
+input {
+    background: none;
+    font-size: 14px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* textarea 스타일 */
+textarea {
+    font-size: 14px;
+    border: none;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/* title 스타일 */
+h3 {
+    margin: 40px auto 10px auto;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* body 스타일 */
+body {
+    font-family: 'NanumSquare';
+    font-weight: 400;
+}
+
+/* nav */
+#nav {
+    height: 60px;
+    width: 100vw;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    line-height: 60px;
+    position: sticky;
+    background-color: white;
+    z-index: 1000;
+    top: 0;
+}
+
+#nav .nav_container {
+    display: flex;
+    max-width: 980px;
+    margin: auto;
+}
+
+#nav .nav_container h1 {
+    display: block;
+    font-family: 'Cafe24SsurroundAir';
+    font-size: 16px;
+    color: black;
+    margin-left: 28px;
+    margin-right: 28px;
+    white-space: nowrap;
+}
+
+#nav .nav_container .nav_menu {
+    display: flex;
+    margin-left: auto;
+}
+
+#nav .nav_container .nav_menu > a {
+    display: block;
+    margin-right: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #8e8e8e;
+}
+
+#nav .nav_container .nav_menu > a:hover {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#nav .nav_container .nav_menu > a:active {
+    color: #8e8e8e;
+}
+
+/* banner */
+#banner {
+    width: fit-content;
+    height: fit-content;
+}
+
+#banner > img {
+    max-width: 100vw;
+    height: fit-content;
+}
+
+#banner > div {
+    position: relative;
+    bottom: 22vw;
+    margin-left: 44vw;
+}
+
+#banner h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#banner p {
+    font-size: 14px;
+    color: #404040;
+}
+
+/* body_container */
+#body_container {
+    width: 100vw;
+    max-width: 980px;
+    margin: auto;
+}
+
+/* motivation */
+#motivation ul > li:first-child {
+    margin-top: 80px;
+}
+
+#motivation ul > li {
+    margin-top: 50px;
+}
+
+#motivation h4 {
+    font-size: 20px;
+}
+
+#motivation ol > li {
+    list-style: square;
+    margin: 20px 30px;
+}
