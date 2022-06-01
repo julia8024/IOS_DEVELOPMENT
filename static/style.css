@@ -16,7 +16,7 @@
 /* max-width: 980px; */
 
 * {
-    list-style: none;
+    list-style-type: none;
     text-decoration: none;
     border-collapse: collapse;
     margin: 0px;
@@ -48,9 +48,13 @@ textarea:focus {
 
 /* title 스타일 */
 h3 {
-    margin: 40px auto 10px auto;
-    font-size: 32px;
+    margin: 200px auto 10px auto;
+    font-size: 40px;
     text-align: center;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 /* body 스타일 */
@@ -113,12 +117,10 @@ body {
 /* banner */
 #banner {
     width: fit-content;
-    height: fit-content;
 }
 
 #banner > img {
     max-width: 100vw;
-    height: fit-content;
 }
 
 #banner > div {
@@ -134,7 +136,7 @@ body {
 
 #banner p {
     font-size: 14px;
-    color: #404040;
+    color: #767676;
 }
 
 /* body_container */
@@ -142,15 +144,16 @@ body {
     width: 100vw;
     max-width: 980px;
     margin: auto;
+    margin-top: -100px;
 }
 
 /* motivation */
 #motivation ul > li:first-child {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 #motivation ul > li {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 #motivation h4 {
@@ -160,4 +163,95 @@ body {
 #motivation ol > li {
     list-style: square;
     margin: 20px 30px;
+    color: #767676;
+}
+
+/* future plan */
+#plan ul {
+    margin-top: 100px;
+    display: flex;
+}
+
+#plan ul > li {
+    width: 40%;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#plan ul > li:last-child {
+    margin-left: auto;
+}
+
+#plan ul > li > h4 {
+    margin-bottom: 30px;
+}
+
+#plan ul > li > p {
+    color: #767676;
+}
+
+#plan table {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#plan table th {
+    background-color: #d6cef6;
+    padding: 20px;
+}
+
+#plan table td {
+    padding: 20px;
+}
+
+#plan table th:hover,
+#plan table td:hover {
+    background-color: #A097C6;
+    color: white;
+}
+
+/* swift */
+#swift h4 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#swift p {
+    text-align: center;
+    color: #767676;
+    margin: 30px auto;
+}
+
+#swift a {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+#swift ul {
+    margin-top: 80px;
+    padding: 30px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #767676;
+}
+
+#swift ul li {
+    list-style: square;
+}
+
+#swift ul li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* footer */
+footer {
+    height: 500px;
 }
