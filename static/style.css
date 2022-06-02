@@ -147,6 +147,11 @@ body {
     margin-top: -100px;
 }
 
+article {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
 /* motivation */
 #motivation ul > li:first-child {
     margin-top: 100px;
@@ -225,26 +230,74 @@ body {
     margin: 30px auto;
 }
 
-#swift a {
-    display: block;
-    text-align: center;
-    margin: auto;
-}
-
 #swift ul {
-    margin-top: 80px;
+    margin: 80px auto;
     padding: 30px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    color: #767676;
-}
-
-#swift ul li {
-    list-style: square;
 }
 
 #swift ul li:not(:last-child) {
-    margin-bottom: 30px;
+    padding-bottom: 50px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+#swift ul li:last-child {
+    margin-bottom: 20px;
+}
+
+#swift ul li:first-child > h4 {
+    margin-top: 20px;
+}
+
+#swift ul li:not(:first-child) > h4 {
+    margin-top: 50px;
+}
+
+/* xcode */
+#xcode > p {
+    text-align: center;
+    color: #767676;
+    margin: 100px auto 30px auto;
+}
+
+#xcode ul {
+    list-style: lower-alpha;
+}
+
+#xcode ul li {
+    margin-top: 80px;
+}
+
+#xcode ul li p {
+    color: #767676;
+    margin: 30px auto 30px 30px;
+}
+
+#xcode > a {
+    display: block;
+    margin-top: 80px;
+}
+
+
+
+
+
+article a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article a:active {
+    opacity: 50%;
 }
 
 
