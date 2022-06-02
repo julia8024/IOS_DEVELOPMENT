@@ -7,10 +7,10 @@
     <title>IOS DEVELOPMENT | Jang Sehee</title>
     <link rel="stylesheet" type="text/css" href="./static/style.css" />
 </head>
-<body>
+<body onload="init()">
     <nav id="nav">
         <div class="nav_container">
-            <h1>IOS DEVELOPMENT</h1>
+            <h1 id="title">IOS DEVELOPMENT</h1>
             <div class="nav_menu">
                 <a href="#motivation">MOTIVATION</a>
                 <a href="#plan">FUTURE PLAN</a>
@@ -197,8 +197,17 @@
                     </p>
                 </li>
             </ul>
-            <!-- <a href="https://developer.apple.com/kr/xcode/">더 알아보기 ></a> -->
             <button id="xcode_more_btn">더 알아보기 ></button>
+        </article>
+        <!-- xcode end -->
+        <article id="memo">
+            <h3>MEMO</h3>
+            <div>
+                <canvas id="myCanvas" style="background-color: rgba(0, 0, 0, 0.1);" width="400" height="400"></canvas>
+                <form>
+                    <textarea type="text" placeholder="memo..." rows="25"></textarea>
+                </form>
+            </div>
         </article>
     </section>
     <script src="./static/script.js"></script>
