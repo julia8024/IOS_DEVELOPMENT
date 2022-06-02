@@ -57,6 +57,10 @@ h4 {
     font-size: 20px;
 }
 
+p {
+    line-height: 2em;
+}
+
 /* body 스타일 */
 body {
     font-family: 'NanumSquare';
@@ -102,6 +106,7 @@ body {
     font-size: 14px;
     cursor: pointer;
     color: #8e8e8e;
+    white-space: nowrap;
 }
 
 #nav .nav_container .nav_menu > a:hover {
@@ -117,6 +122,7 @@ body {
 /* banner */
 #banner {
     width: fit-content;
+    font-family: 'Cafe24SsurroundAir';
 }
 
 #banner > img {
@@ -130,13 +136,14 @@ body {
 }
 
 #banner h2 {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 
 #banner p {
-    font-size: 14px;
+    font-size: 12px;
     color: #767676;
+    line-height: 1.5em;
 }
 
 /* body_container */
@@ -183,6 +190,11 @@ article {
     padding: 40px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    transition: 0.5s;
+}
+
+#plan ul > li:hover {
+    transform: translateY(-20px);
 }
 
 #plan ul > li:last-child {
@@ -204,7 +216,7 @@ article {
 }
 
 #plan table th {
-    background-color: #d6cef6;
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 
@@ -214,7 +226,7 @@ article {
 
 #plan table th:hover,
 #plan table td:hover {
-    background-color: #A097C6;
+    background-color: black;
     color: white;
 }
 
@@ -254,6 +266,23 @@ article {
     margin-top: 50px;
 }
 
+#swift a {
+    display: block;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+}
+
+#swift a:hover {
+    text-decoration: underline;
+}
+
+#swift a:active {
+    opacity: 50%;
+}
+
 /* xcode */
 #xcode > p {
     text-align: center;
@@ -274,37 +303,77 @@ article {
     margin: 30px auto 30px 30px;
 }
 
-#xcode > a {
+#xcode button {
     display: block;
-    margin-top: 80px;
-}
-
-
-
-
-
-article a {
-    display: block;
-    text-align: center;
     margin: auto;
-    cursor: pointer;
-    font-size: 14px;
-    color: black;
+    margin-top: 80px;
+    border: none;
+    background: black;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 4px;
+    transition: 0.5s;
 }
 
-article a:hover {
-    text-decoration: underline;
+#xcode button:hover {
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
 }
-
-article a:active {
-    opacity: 50%;
-}
-
-
-
-
 
 /* footer */
 footer {
-    height: 500px;
+    margin-top: 100px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Cafe24SsurroundAir';
+}
+
+footer > div {
+    max-width: 980px;
+    margin: auto;
+    padding: 80px 28px;
+    text-align: center;
+    
+}
+
+footer h1 {
+    font-size: 16px;
+    margin: auto;
+}
+
+footer p {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+
+
+/* 모바일 : screen width <= 767px */
+@media (max-width:767px) {
+    /* nav */
+    #nav {
+        width: 100%;
+    }
+
+    #nav .nav_container .nav_menu {
+        margin-left: auto;
+    }
+}
+
+@media (max-width:700px) {
+    #nav .nav_container .nav_menu {
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+    html {
+        width: max-content;
+    }
+
+    #banner p {
+        display: none;
+    }
 }
