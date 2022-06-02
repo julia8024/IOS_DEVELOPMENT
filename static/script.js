@@ -20,6 +20,7 @@ function draw(curX, curY) {
     context.lineTo(curX, curY);
     context.stroke();
 }
+
 function down(e) {
     startX = e.offsetX;
     startY = e.offsetY;

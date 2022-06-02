@@ -13,8 +13,6 @@
 /* 미디어쿼리 */
 @import url(cssscreen.css) screen;
 
-/* max-width: 980px; */
-
 * {
     list-style-type: none;
     text-decoration: none;
