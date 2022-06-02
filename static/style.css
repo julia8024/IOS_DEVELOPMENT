@@ -24,17 +24,6 @@
     scroll-behavior: smooth;
 }
 
-/* input 스타일 */
-input {
-    background: none;
-    font-size: 14px;
-    border: none;
-}
-
-input:focus {
-    outline: none;
-}
-
 /* textarea 스타일 */
 textarea {
     font-size: 14px;
