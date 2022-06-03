@@ -116,9 +116,25 @@ body {
 }
 
 #banner > div {
+    transition: 1s;
+}
+
+#banner > div.banner_1 {
     position: relative;
     bottom: 22vw;
     margin-left: 44vw;
+}
+
+div.banner_2 {
+    position: relative;
+    bottom: 34vw;
+    margin-left: 4vw;
+}
+
+div.banner_3 {
+    position: relative;
+    bottom: 30vw;
+    margin-left: 50vw;
 }
 
 #banner h2 {
@@ -322,6 +338,8 @@ article {
 
 #memo canvas {
     display: block;
+    width: 400px;
+    height: 400px;
 }
 
 #memo form {
@@ -377,10 +395,12 @@ footer p {
 
     #memo canvas {
         margin: auto;
+        max-width: 80vw;
     }
 
     #memo form {
         margin: 30px auto;
+        max-width: 80vw;
     }
 
 }
@@ -396,7 +416,7 @@ footer p {
         width: max-content;
     }
 
-    #banner p {
+    #banner h2, #banner p {
         display: none;
     }
 }

@@ -1,3 +1,28 @@
+var arr = new Array("first_banner.jpg", "second_banner.jpg", "third_banner.jpg");
+var index = 1;
+
+var banner_img = document.getElementById("banner_img");
+var banner_style = document.getElementById("banner_text");
+
+setInterval(changeImg, 5000);
+
+banner_img.addEventListener('click', changeImg);
+
+function changeImg() {
+    if (index == 3) {
+        banner_img.src = "./static/images/" + arr[0];
+        banner_style.classList.remove('banner_3');
+        banner_style.classList.add('banner_1');
+        index = 1;
+    } else {
+        banner_img.src = "./static/images/" + arr[index];
+        banner_style.classList.remove('banner_'+index);
+        banner_style.classList.add('banner_'+(index+1));
+        index++;
+    }
+}
+
+// memo - canvas
 var canvas, context;
 function init() {
     canvas = document.getElementById("myCanvas");
