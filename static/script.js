@@ -22,6 +22,10 @@ function changeImg() {
     }
 }
 
+document.getElementById("xcode_more_btn").addEventListener('click', function() {
+    window.open("https://developer.apple.com/kr/xcode/");
+});
+
 // memo - canvas
 var canvas, context;
 function init() {
