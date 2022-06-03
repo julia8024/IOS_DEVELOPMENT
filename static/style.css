@@ -79,6 +79,13 @@ body {
     margin-left: 28px;
     margin-right: 28px;
     white-space: nowrap;
+    cursor: pointer;
+}
+
+#nav .nav_container h1 > a,
+#nav .nav_container h1 > a:hover,
+#nav .nav_container h1 > a:active {
+    color: black;
 }
 
 #nav .nav_container .nav_menu {
